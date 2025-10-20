@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Years of Us byyy ❤️</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic use -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles for a romantic touch */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fdf2f8; /* Very light rose/pink background */
+        }
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* Custom shadow for the romantic cards */
+        .anniversary-card {
+            box-shadow: 0 10px 15px -3px rgba(236, 72, 153, 0.1), 0 4px 6px -2px rgba(236, 72, 153, 0.05);
+            transition: transform 0.3s ease;
+        }
+        .anniversary-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Removed timeline specific CSS for a simpler layout */
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header Section -->
+    <header class="bg-pink-600/90 text-white shadow-xl py-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h1 class="playfair text-5xl md:text-7xl font-extrabold tracking-tight mb-2">
+                4 Years of Us
+            </h1>
+            <p class="text-xl md:text-2xl font-light opacity-90">
+                To my hafiji, on our love anniversary.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-5xl mx-auto px-4 py-16">
+        
+        <!-- Days Counter (Dynamic) -->
+        <section class="text-center mb-16">
+            <div class="inline-block bg-white p-6 rounded-3xl shadow-lg border border-pink-100">
+                <p class="text-pink-500 text-lg font-semibold mb-2">We've been together for...</p>
+                <div class="flex items-center justify-center space-x-4">
+                    <span id="days-together" class="text-5xl md:text-7xl playfair font-bold text-pink-700">--</span>
+                    <span class="text-3xl text-gray-600">days!</span>
+                </div>
+                <!-- NOTE: Update the date inside the calculateDays function in the script -->
+                <p id="start-date-display" class="text-sm text-gray-500 mt-2">Since October 21, 2021</p>
+            </div>
+        </section>
+
+
+        <!-- Photo Gallery Section (Replaces Timeline) -->
+        <section class="pt-8 pb-16">
+            
+            <h2 class="playfair text-4xl text-center text-pink-700 font-bold mb-12">Our Favorite Memories Together</h2>
+
+            <!-- Grid container for the photo cards. Responsive layout: 1 column, then 2, then 3. -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Memory Card 1 -->
+                <div class="anniversary-card bg-white p-4 rounded-2xl border border-pink-200">
+                    <!-- Image with a 4:3 aspect ratio -->
+                    <img src="https://placehold.co/400x300/fecaca/9d174d?text=Our+First+Year" onerror="this.onerror=null;this.src='https://placehold.co/400x300/fecaca/9d174d?text=Image+Error';" alt="A photo from our first date" class="w-full rounded-xl object-cover mb-4 shadow-md aspect-[4/3]">
+                    <h3 class="playfair text-xl font-semibold text-pink-500 mb-2">The Day It Started !!!!!</h3>
+                    <p class="text-gray-700 text-sm">"first time na un kerta yana venum unaku anniversary iku kerta first time niyum onu venum sona.
+                          nanum thara nu sona.kortukura apo ni yanaku kortutha athaya and yanakaga ring present pana"</p>
+                </div>
+
+                <!-- Memory Card 2 -->
+                <div class="anniversary-card bg-white p-4 rounded-2xl border border-pink-200">
+                    <img src="hand.jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x300/fecaca/9d174d?text=Image+Error';" alt="A photo from our first trip" class="w-full rounded-xl object-cover mb-4 shadow-md aspect-[4/3]">
+                    <h3 class="playfair text-xl font-semibold text-pink-500 mb-2">Hand Hold</h3>
+                    <p class="text-gray-700 text-sm">"yanaku apo  shock becoz first time ni en hand kerta hold pana photo yartutha niyave.
+                        neyabagam iruka sch la 1st floor boys step kerta rohit ni na la iruthom"</p>
+                </div>
+
+                <!-- Memory Card 3 -->
+                <div class="anniversary-card bg-white p-4 rounded-2xl border border-pink-200">
+                    <img src="beach.jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x300/fecaca/9d174d?text=Image+Error';" alt="A photo of our home" class="w-full rounded-xl object-cover mb-4 shadow-md aspect-[4/3]">
+                    <h3 class="playfair text-xl font-semibold text-pink-500 mb-2">Outing</h3>
+                    <p class="text-gray-700 text-sm">"first time nama outing ponom jolly a new experience becoz 2 years la nama yangayum ponathu ila we get comfortable with us that day but yanala unaku konjam tension and food sapta mutiyala sryyyyy by?????!?!?!?!"</p>
+                </div>
+
+                <!-- Memory Card 4 -->
+                <div class="anniversary-card bg-white p-4 rounded-2xl border border-pink-200">
+                    <img src="cafe.jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x300/fecaca/9d174d?text=Image+Error';" alt="A recent favorite photo" class="w-full rounded-xl object-cover mb-4 shadow-md aspect-[4/3]">
+                    <h3 class="playfair text-xl font-semibold text-pink-500 mb-2">Long Bike ride</h3>
+                    <p class="text-gray-700 text-sm">"ni assa parta long drive poganum sona ,ni yanaya rombave nala parthukuna romba caring a elamay senja unaku na yana seiya pora theriyala kutty ma."</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Final Message Card -->
+        <section class="mt-24">
+            <div class="bg-pink-100 p-8 md:p-12 rounded-3xl shadow-2xl text-center anniversary-card">
+                <i data-lucide="sparkles" class="w-12 h-12 text-pink-600 mx-auto mb-4"></i>
+                <h2 class="playfair text-4xl md:text-5xl font-extrabold text-pink-800 mb-6">Happy 4th year Love Anniversary, faz ma!</h2>
+                <div class="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
+                    <!-- REPLACE THIS TEXT WITH YOUR PERSONAL WISH -->
+                    <p class="mb-4">Four years ago, Allah unaya yanakaga send panaga insha allah our journey will ends at our old age while performing haj.</p>
+                    <p class="mb-4">May allah namala romba love ota happy a vachikanum serkirama nikkah panitu anniversary a ona celebrate pananum nama virtula.</p>
+                    <p class="font-semibold text-pink-600 mt-6">sryy da yapayum unaku na different a present pananum nenaipa but already panatha copy panita sryy and virtula relative vera irukaga ona un kerta vcall la wish pani unaya parka solanum un reaction parkanum nenacha but fate yanaku sryyyyyy ma<br>— [epadiku unoda QUEEN]</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JavaScript for Dynamic Content -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // --- Date Calculation Script ---
+        function calculateDays() {
+            // IMPORTANT: Set your exact relationship start date here (Year, Month-1, Day)
+            const startDate = new Date(2021, 9, 21); // October is month 9 (0-indexed)
+            const today = new Date();
+
+            // Calculate the difference in milliseconds
+            const diffTime = today.getTime() - startDate.getTime();
+
+            // Convert milliseconds to days
+            const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+            // Update the UI
+            const daysElement = document.getElementById('days-together');
+            if (daysElement) {
+                daysElement.textContent = diffDays.toLocaleString(); // Add commas for large numbers
+            }
+            
+            // Display the exact start date
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('start-date-display').textContent = 'Since ' + startDate.toLocaleDateString('en-US', options);
+        }
+
+        // Run the calculation when the window loads
+        window.onload = calculateDays;
+    </script>
+
+</body>
+</html>
